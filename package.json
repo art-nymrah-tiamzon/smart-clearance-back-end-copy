@@ -1,0 +1,29 @@
+{
+  "name": "g11-backend-appdevproject",
+  "version": "1.0.0",
+  "description": "Backend API built using Node.js and MongoDB.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/G11-AppDevProject/g11-backend-appdevproject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/G11-AppDevProject/g11-backend-appdevproject/issues"
+  },
+  "homepage": "https://github.com/G11-AppDevProject/g11-backend-appdevproject#readme",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.19.4"
+  }
+}
