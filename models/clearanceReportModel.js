@@ -21,8 +21,5 @@ const ClearanceReportSchema = new mongoose.Schema(
 );
 
 // collection name forced to "clearance_report"
-module.exports = mongoose.model(
-  "ClearanceReport",
-  ClearanceReportSchema,
-  "clearance_report"
-);
+module.exports = mongoose.model("ClearanceReport", ClearanceReportSchema);
+
