@@ -23,10 +23,17 @@ router.post("/request/send", async (req, res) => {
       await exists.save();
       return res.status(200).json({ success:true, message:"Request reset", request:exists });
     }
+    
+      const newReq = await ClearanceRequest.create({
+        faculty_id,
+        department,
+        academic_year,
+        semester,
+        status: "No Status",
+        submitted_on: new Date(),   // ✅ REAL CURRENT DATE
+        approved_on: null
+      });
 
-    const newReq = await ClearanceRequest.create({
-      faculty_id, department, academic_year, semester, status:"No Status"
-    });
 
     res.status(201).json({ success:true, request:newReq });
 
